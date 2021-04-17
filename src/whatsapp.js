@@ -4,6 +4,7 @@ venom.create().then(client => start(client)).catch(error => {
 	console.log(error);
 });
 
+
 async function start(client) {
 	 client.onMessage(message => {
 	if (message.body === "Hi" && message.isGroupMsg === false) {
